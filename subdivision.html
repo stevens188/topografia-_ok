@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>subdivision de terrenos en Villavicencio Meta</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <style>
+      @media screen and (max-width: 768px) {
+        body {
+          border: 10px solid blue;
+        }
+      }
+    </style> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="carro">
+        <figure class="logo">
+          <img src="images/logo 2.png" height="50" alt="Logo de arquidis" />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="index.html">Topografia</a>
+            </li>
+            <li>
+              <a class="link" href="desenglobe.html">Desenglobes</a>
+            </li>
+            <li>
+              <a class="link" href="subdivision.html">subdivisión de terrenos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+
+      <div class="container">
+              <div class="yuca">
+                    <h1>
+                        <strong>Subdivisión de terrenos<br/></strong> En villavicencio<br/> y municipios aledaños<br/>
+                   </h1>
+                   <p>
+                      <a class="call-to-action" href="tel:+573202372522" target="_blank">Llamar ✆ 3202372522</a><br/><br/>
+                      <a> Lotes, casas, fincas, Predios urbanos<br/> <br/> Prestamos servicios de subdivisión de lotes en toda <br/>
+                        la region los llanos orientales. <br/></a>
+                   </p>
+              </div>
+          <img class="hero-image" src="images/hero3.png" width="500" height="300" alt="imagen principal del sitio">
+      </div>
+
+    </section>
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>Nuestros servicios</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Subdivisión de lotes urbanos y rurales.</h3>
+          <p class="project-description">Te ayudamos con el tramite, los planos y toda la sesoria juridica necesira para
+            la realización de la subdivisón del predio.</p>
+            <a class="event-url" href="tel:+573202372522" target="_blank">Llamar ✆ 3202372522</a>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" width="500" src="images/subdivision.jpg" alt="imagen de levantamiento con drone Villavicencio">
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Planos de subdivisión</h3>
+          <p class="project-description">Realizamos los planos de los predios divididos, para tramites con el Igac o Catastro, Certificacion de Cabida y Linderos.</p>
+
+        </div>
+        <figure class="project-imageContainer">
+            <img class="project-image" width="500" src="images/lote1.jpg" alt="prouyecto del curso de React Native">
+        </figure>
+      </article>
+      <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Medición de fincas y lotes</h3>
+              <p class="project-description">Topografias de Fincas y Predios segun la normativa IGAC,
+                equipos de ultima generacion, calidad y experiencia certificada. </p>
+                     <a class="event-url" href="tel:+573202372522" target="_blank">Llamar ✆ 3202372522</a>
+          </div>
+          <figure class="project-imageContainer">
+            <img class="project-image" width="500" src="images/lotes.jpg" alt="prouyecto del curso de React Native">
+          </figure>
+        </article>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Villavicencio Meta <br>  Carrera 33 # 41-11 <br>Telefono fijo: 038 6849702></p>
+        </div>
+        <div>
+          <p>
+            Email: <a href="https://mail.google.com/mail">topografia@arquidis.com.co</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // console.log('Hola mundo! es mi primera linea en JS');
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const menu = document.querySelector('.menu');
+      // console.log(menu);
+      const burgerButton = document.querySelector('#burger-menu');
+      // console.log(burgerButton);
+
+
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+
+
+      function hideShow() {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
+  </body>
+</html>
