@@ -6,7 +6,19 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 <url>
-  <loc>https://topografia.arquidis.com.co/</loc>
+  <loc>https://topografia.arquidis.com.co/index.html</loc>
+  <lastmod>2020-05-10T15:43:34+00:00</lastmod>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://topografia.arquidis.com.co/subdivision.html</loc>
+  <lastmod>2020-05-10T15:43:34+00:00</lastmod>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://topografia.arquidis.com.co/desenglobe.html</loc>
   <lastmod>2020-05-10T15:43:34+00:00</lastmod>
   <priority>1.00</priority>
   <changefreq>weekly</changefreq>
